@@ -39,13 +39,13 @@ pipeline {
       }  
         }
         }
-        stage ('Testing Stage') {
-            steps {
-                withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn test'
-                }
-            }
-        }
+      //  stage ('Testing Stage') {
+       //     steps {
+       //         withMaven(maven : 'maven_3_5_0') {
+       //             sh 'mvn test'
+       //         }
+       //     }
+       // }
          stage("publish to nexus") {
             steps {
                 script {
@@ -86,7 +86,7 @@ pipeline {
     stage('Deployment in remote Hosts') {
       steps {
           sh '''
-          ansible-playbook ansible.yaml
+          /root/ansible-playbook ansible.yaml
           '''
       }
     }
