@@ -87,8 +87,8 @@ pipeline {
       steps {
           sh '''
           
-          ls
-          cd 
+          
+          cd ~
           PWD=`pwd`
           echo $PWD
           ls
