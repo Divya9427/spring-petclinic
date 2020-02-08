@@ -89,7 +89,7 @@ pipeline {
           PWD=`pwd`
           echo $PWD
           ls
-          ansible-playbook $PWD/ansible.yaml
+          sudo ansible-playbook $PWD/ansible.yaml
           '''
       }
     }
