@@ -8,7 +8,7 @@ pipeline {
         NEXUS_URL = "34.66.64.75:8081"
         NEXUS_REPOSITORY = "samplesnapshot"
         NEXUS_CREDENTIAL_ID = "nexus-credentials"
-        REVISION = "0.0.${env.BUILD_ID}"
+       
     }
     stages {
         stage ('Compile') {
@@ -23,9 +23,7 @@ pipeline {
         
            stage('SonarQube analysis') {
       steps {
-         // script {
-         // currentBuild.displayName = "${REVISION}"
-        //}
+        
            withMaven(maven : 'maven_3_5_0') {
         withSonarQubeEnv('sonar') {
           sh 'mvn clean package sonar:sonar'
