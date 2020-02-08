@@ -82,13 +82,14 @@ pipeline {
             }
         }
 
-    }
+    
     stage('Deployment in remote Hosts') {
       steps {
           sh '''
           ansible-playbook ansible.yaml
           '''
       }
+    }
     }
     //post {
     //   always {
