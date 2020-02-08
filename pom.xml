@@ -5,8 +5,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <!--<version>2.2.0.BUILD-SNAPSHOT</version>-->
-   <version>${revision}</version>
+  <version>2.2.0.BUILD-SNAPSHOT</version>
+   <!--<version>${revision}</version>-->
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -22,7 +22,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
      <!-- Sane default when no revision property is passed in from the commandline -->
-        <revision>0-SNAPSHOT</revision>
+      <!--  <revision>0-SNAPSHOT</revision>-->
 
     <!-- Web dependencies -->
     <webjars-bootstrap.version>3.3.6</webjars-bootstrap.version>
