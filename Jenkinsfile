@@ -86,6 +86,10 @@ pipeline {
     stage('Deployment in remote Hosts') {
       steps {
           sh '''
+          PWD=`pwd`
+          echo $PWD
+          cd /root
+        
           ansible-playbook /root/ansible.yaml
           '''
       }
