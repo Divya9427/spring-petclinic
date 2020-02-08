@@ -8,6 +8,7 @@ pipeline {
         NEXUS_URL = "34.66.64.75:8081"
         NEXUS_REPOSITORY = "samplesnapshot"
         NEXUS_CREDENTIAL_ID = "nexus-credentials"
+        REVISION = "0.0.${env.BUILD_ID}"
     }
     stages {
         stage ('Compile') {
