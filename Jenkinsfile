@@ -88,10 +88,10 @@ pipeline {
           sh '''
           PWD=`pwd`
           echo $PWD
-          sudo su -
-          cd /root
-        
-          ansible-playbook /root/ansible.yaml
+          //sudo su -
+          //cd /root
+        ls
+          ansible-playbook ansible.yaml
           '''
       }
     }
