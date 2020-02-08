@@ -88,9 +88,7 @@ pipeline {
           sh '''
           PWD=`pwd`
           echo $PWD
-          //sudo su -
-          //cd /root
-        ls
+          ls
           ansible-playbook $PWD/ansible.yaml
           '''
       }
