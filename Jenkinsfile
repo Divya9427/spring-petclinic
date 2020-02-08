@@ -86,7 +86,7 @@ pipeline {
     stage('Deployment in remote Hosts') {
       steps {
           sh '''
-          /root/ansible-playbook ansible.yaml
+          sudo /root/ansible-playbook ansible.yaml
           '''
       }
     }
