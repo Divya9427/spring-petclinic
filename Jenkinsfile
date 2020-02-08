@@ -88,7 +88,7 @@ pipeline {
           sh '''
           
           
-          cd ~
+          sudo su - root
           PWD=`pwd`
           echo $PWD
           ls
