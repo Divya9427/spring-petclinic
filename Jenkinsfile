@@ -91,7 +91,7 @@ pipeline {
           //sudo su -
           //cd /root
         ls
-          ansible-playbook ansible.yaml
+          ansible-playbook $PWD/ansible.yaml
           '''
       }
     }
