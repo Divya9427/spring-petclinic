@@ -86,11 +86,8 @@ pipeline {
     stage('Deployment in remote Hosts') {
       steps {
           sh '''
-          
-          
           PWD=`pwd`
-          echo $PWD
-          ls -ltra
+         ansible-playbook -i $PWD/hosts $PWD/ansible.yaml
           '''
       }
     }
