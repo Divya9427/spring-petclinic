@@ -88,10 +88,9 @@ pipeline {
           sh '''
           
           
-          sudo su - root
           PWD=`pwd`
           echo $PWD
-          ls
+          ls -ltra
           '''
       }
     }
