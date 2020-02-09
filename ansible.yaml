@@ -8,7 +8,7 @@
         dest: /root/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar
     - name: Coptying the sh file
       copy:
-        src: $PWD/newdeploy.sh
+        src: newdeploy.sh
         dest: /root/newdeploy.sh
         mode: 0777
     - name: Deployment
