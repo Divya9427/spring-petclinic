@@ -41,6 +41,7 @@ pipeline {
       }  
         }
         }
+
        // stage ('Testing Stage') {
         //    steps {
         //        withMaven(maven : 'maven_3_5_0') {
@@ -48,6 +49,7 @@ pipeline {
         //        }
         //    }
         //}
+
          stage("publish to nexus") {
             steps {
                 script {
@@ -84,6 +86,15 @@ pipeline {
             }
         }
 
+    
+    stage('Deployment in remote Hosts') {
+      steps {
+          sh '''
+          PWD=`pwd`
+         ansible-playbook -i $PWD/hosts $PWD/ansible.yaml
+          '''
+      }
+    }
     }
     //post {
     //   always {
