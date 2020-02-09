@@ -85,7 +85,14 @@ pipeline {
                 }
             }
         }
-
+     stage('Deployment in remote Hosts') {
+      steps {
+          sh '''
+          PWD=`pwd`
+         ansible-playbook -i $PWD/hosts $PWD/ansible.yaml
+          '''
+      }
+    }
     
    
     }
