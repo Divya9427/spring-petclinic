@@ -4,8 +4,8 @@
   tasks:
     - name: Coptying the jar file
       copy:
-        src: /var/lib/jenkins/workspace/spring-petclinic_master/target/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar
-        dest: /root/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar
+        src: /var/lib/jenkins/workspace/spring-petclinic_master/target/spring-petclinic-2.2.0.jar
+        dest: /root/spring-petclinic-2.2.0.jar
     - name: Coptying the sh file
       copy:
         src: newdeploy.sh
