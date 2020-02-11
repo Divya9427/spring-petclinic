@@ -5,7 +5,7 @@ Hi Kumar check
     <img src="https://push-to.cfapps.io/ui/assets/images/Push-to-Pivotal-Light-with-Shadow.svg" width="180" alt="Push" align="center">
 </a>
 Hi Bharath Kumar Hello Guru
-## Understanding the Spring Petclinic application with a few diagrams
+## Understanding the Spring Petclinic application with a few diagrams check
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
 
 ## Running petclinic locally
