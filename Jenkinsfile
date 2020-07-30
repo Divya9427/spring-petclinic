@@ -40,7 +40,7 @@ pipeline {
       steps {
           sh '''
           PWD=`pwd`
-         ansible-playbook -i $PWD/hosts $PWD/ansible.yaml
+         ansible-playbook -i $PWD/hosts $PWD/ansible.yaml -u root
           '''
       }
     }
