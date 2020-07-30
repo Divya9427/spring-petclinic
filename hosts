@@ -1,1 +1,2 @@
-35.223.187.190
+[server]
+35.223.187.190 ansible_connection=ssh ansible_user=root
